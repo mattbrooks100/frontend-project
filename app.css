@@ -1,0 +1,97 @@
+body {
+  background-color: darkgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.grid-layout {
+  background-color: white;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main main"
+    "footer footer footer footer footer footer";
+}
+
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: khaki;
+}
+
+.nav-links a {
+  color: black;
+}
+
+.menu {
+  display: flex;
+  font-size: 18px;
+}
+
+.menu li {
+  padding: 10px 14px;
+}
+
+.menu li:hover {
+  background-color: darkkhaki;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+}
+
+.token-tile {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: linen;
+}
+
+.token-tile:hover {
+  background-color: gold;
+}
+
+.token-basic {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: grey;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.info-bar-head {
+    font-size: 28px;
+}
+
+.tile-container {
+  background-color: rebeccapurple;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px 10px;
+}
