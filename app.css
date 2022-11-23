@@ -1,4 +1,6 @@
+html,
 body {
+  margin: 0px;
   background-color: darkgray;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,12 +14,12 @@ li {
 }
 
 .grid-layout {
-  background-color: white;
+  background-color: rgb(54, 54, 54);
   display: grid;
   grid-gap: 10px;
   grid-template-areas:
     "header header header header header header"
-    "menu main main main main main"
+    "main main main main main main"
     "footer footer footer footer footer footer";
 }
 
@@ -28,11 +30,12 @@ li {
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: khaki;
+  background-color: black;
+  border: 1px solid gray;
 }
 
 .nav-links a {
-  color: black;
+  color: white;
 }
 
 .menu {
@@ -45,22 +48,27 @@ li {
 }
 
 .menu li:hover {
-  background-color: darkkhaki;
+  background-color: lightsalmon;
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
 .logo {
   font-size: 32px;
+  color: lightsalmon;
 }
 
 .main-container {
   display: flex;
   flex-flow: row wrap;
   flex-direction: column;
+  padding: 10px;
+  min-height: calc(100vh - 130px);
 }
 
 .token-tile {
+  display: flex;
+  align-items: center;
   border: 2px solid black;
   border-radius: 5px;
   padding: 5px;
@@ -76,22 +84,42 @@ li {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.token-price {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 4px;
+}
+
 .info-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  background-color: grey;
+  background-color: rgb(255, 185, 158);
   margin-bottom: 10px;
   padding: 5px;
+  border: 2px solid black;
 }
 
 .info-bar-head {
-    font-size: 28px;
+  font-size: 28px;
+  margin-bottom: 3px;
 }
 
 .tile-container {
-  background-color: rebeccapurple;
   display: flex;
   flex-flow: row wrap;
   gap: 10px 10px;
+}
+
+.input {
+  font-size: 18px;
+}
+
+button {
+  font-size: 18px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

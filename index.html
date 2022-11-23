@@ -17,6 +17,17 @@
     <div class="grid-layout">
       <div style="grid-area: header" class="header">
         <div class="logo">CryptoCAT</div>
+        <div class="form-container">
+          <form class="form">
+            <input
+              type="text"
+              id="search-form"
+              class="input"
+              onkeyup="searchBar()"
+              placeholder="search..."
+            />
+          </form>
+        </div>
         <ul class="nav-links">
           <div class="menu">
             <li><a href="#">Home</a></li>
@@ -25,14 +36,13 @@
           </div>
         </ul>
       </div>
-      <div style="grid-area: menu">Menu</div>
       <div style="grid-area: main">
         <div class="main-container">
-            <div class="info-container"></div>
-            <div class="tile-container"></div>
+          <div class="info-container"></div>
+          <div class="tile-container"></div>
         </div>
       </div>
-      <div style="grid-area: footer">Footer</div>
+      <div style="grid-area: footer" class="footer">© 2022 CryptoCAT. All rights reserved.</div>
     </div>
   </body>
 </html>
