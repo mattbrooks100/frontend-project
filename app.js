@@ -7,7 +7,7 @@ $infoContainer.hide();
 //============================= REQUEST TOKEN DATA FROM API =============================//
 const callAPI = () => {
   $.get("https://api.coincap.io/v2/assets", (response) => {
-    tokenDataArray = response.data;
+    const tokenDataArray = response.data;
     for (let token of tokenDataArray) {
       createTokenTile(token);
     }
@@ -91,5 +91,5 @@ const searchBar = () => {
   }
 };
 const clear = () => {
-    $input.reset();
+  $input.reset();
 };

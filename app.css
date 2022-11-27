@@ -17,9 +17,10 @@ body {
 
 .header {
   display: flex;
+  position: relative;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
@@ -30,11 +31,21 @@ body {
 
 .logo {
   font-size: 32px;
+  font-weight: bold;
   color: lightsalmon;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: lightsalmon;
+  opacity: 20%;
 }
 
 .form-container {
   display: flex;
+  position: absolute;
+  right: 10px;
   padding: 3px;
   background-color: lightsalmon;
 }
@@ -44,6 +55,7 @@ body {
   flex-flow: row wrap;
   flex-direction: column;
   padding: 10px;
+  padding-top: 0px;
   min-height: calc(100vh - 130px);
 }
 
@@ -94,7 +106,7 @@ body {
 
 .input {
   font-size: 18px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .clear {
