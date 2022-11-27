@@ -5,14 +5,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
 .grid-layout {
   background-color: rgb(54, 54, 54);
   display: grid;
@@ -28,34 +20,23 @@ li {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: black;
   border: 1px solid gray;
 }
 
-.nav-links a {
-  color: white;
-}
-
-.menu {
-  display: flex;
-  font-size: 18px;
-}
-
-.menu li {
-  padding: 10px 14px;
-}
-
-.menu li:hover {
-  background-color: lightsalmon;
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-
 .logo {
   font-size: 32px;
   color: lightsalmon;
+}
+
+.form-container {
+  display: flex;
+  padding: 3px;
+  background-color: lightsalmon;
 }
 
 .main-container {
@@ -71,12 +52,12 @@ li {
   align-items: center;
   border: 2px solid black;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   background-color: linen;
 }
 
 .token-tile:hover {
-  background-color: gold;
+  background-color: rgb(255, 108, 50);
 }
 
 .token-basic {
@@ -93,9 +74,10 @@ li {
 .info-container {
   display: flex;
   flex-direction: column;
+  position: relative;
   background-color: rgb(255, 185, 158);
   margin-bottom: 10px;
-  padding: 5px;
+  padding: 10px;
   border: 2px solid black;
 }
 
@@ -112,9 +94,10 @@ li {
 
 .input {
   font-size: 18px;
+  margin-right: 10px;
 }
 
-button {
+.clear {
   font-size: 18px;
 }
 
@@ -122,4 +105,13 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  color: lightsalmon;
+  margin-bottom: 5px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: fit-content;
 }
