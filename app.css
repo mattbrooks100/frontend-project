@@ -56,7 +56,7 @@ body {
   flex-direction: column;
   padding: 10px;
   padding-top: 0px;
-  min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 112px);
 }
 
 .token-tile {
